@@ -2,6 +2,11 @@ let cols = 5;
 let rows = 5;
 let grid = new Array(cols)
 
+let openSet = [];
+let closedSet = [];
+let start;
+let end;
+
 function Spot(){
   this.f = 0;
   this.g = 0;
